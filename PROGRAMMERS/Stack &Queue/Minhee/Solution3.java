@@ -3,15 +3,15 @@ package programmers.stack;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Sol1 {
+public class Solution3 {
     public static void main(String[] args) {
-        System.out.println(new Solution1().solution(2, 10, new int[]{7, 4, 5, 6}));
-        System.out.println(new Solution1().solution(100, 100, new int[]{10}));
-        System.out.println(new Solution1().solution(100, 100, new int[]{10, 10, 10, 10, 10, 10, 10, 10, 10, 10}));
+        System.out.println(new Sol3().solution(2, 10, new int[]{7, 4, 5, 6}));
+        System.out.println(new Sol3().solution(100, 100, new int[]{10}));
+        System.out.println(new Sol3().solution(100, 100, new int[]{10, 10, 10, 10, 10, 10, 10, 10, 10, 10}));
     }
 }
 
-class Solution1 {
+class Sol3 {
     public int solution(int bridge_length, int weight, int[] truck_weights) {
         int totalTime = 0;              //총 걸린 시간
         int currentTotalWeight = 0;     //다리위에 있는 트럭들 총합
